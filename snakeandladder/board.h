@@ -6,11 +6,12 @@ public:
     Board();
     int getNextPosition(int currentPosition, int diceRoll);
 private:
-    int boardSize;
+  /** int boardSize;
     int numSnakes;
     int numLadders;
     int* snakes;
     int* ladders;
 };
+*/
 
 #endif // BOARD_H
