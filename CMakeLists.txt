@@ -1,20 +1,6 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.25)
+project(LifeSimulator2)
 
-project(lab1 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
-
-qt_standard_project_setup()
-
-qt_add_executable(lab1 lifeSimulator.cpp)
-
-set_target_properties(lab1 PROPERTIES
-    WIN32_EXECUTABLE TRUE
-    MACOSX_BUNDLE TRUE
-)
-
-target_link_libraries(lab1 PRIVATE
-    Qt6::Core
-    Qt6::Gui
-    Qt6::Widgets
-)
+add_executable(LifeSimulator2 main.cpp character.cpp character.h)
