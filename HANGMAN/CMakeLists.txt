@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 # Add the source files
 set(SOURCES
         main.cpp
-        Hangman.cpp)
+        HANGMAN.cpp)
 
 # Add the header files
 set(HEADERS
