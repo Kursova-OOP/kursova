@@ -7,7 +7,6 @@ int Card::getValue() const {
     // In this simple version, card value is equal to its rank
     return static_cast<int>(rank);
 }
-
 void Card::display() const {
     std::string suitString;
     std::string rankString;
