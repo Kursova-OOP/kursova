@@ -1,0 +1,12 @@
+cd "project name"
+правим build папка - mkdir build
+cd build
+cmake ..
+make
+
+----------------------------------
+g++ -o "project name" main.cpp "project name".cpp
+./"project name"
+----------------------------------
+
+
