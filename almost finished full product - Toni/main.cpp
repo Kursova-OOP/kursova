@@ -3,7 +3,7 @@
 #include "tictactoe.h"
 #include "RockPaperScissors.h"
 #include "hangman.h"
-//#include "war"
+#include "card.h"
 #include "character.h"
 
 // Function to clear the console screen
@@ -23,7 +23,8 @@ void displayMenu() {
     std::cout << "2. Hangman" << std::endl;
     std::cout << "3. Rock Paper Scissors" << std::endl;
     std::cout << "4. Life Simulator" << std::endl;
-    std::cout << "5. Exit" << std::endl;
+    std::cout << "5. War" << std::endl;
+    std::cout << "6. Exit" << std::endl;
 }
 
 int main() {
@@ -62,8 +63,14 @@ int main() {
                 game.play();
                 break;
             }
-                case 5:
-                    exitMenu = true;
+            case 5: {
+                clearScreen();
+                Deck play;
+                play.game();
+                break;
+            }
+            case 6:
+                exitMenu = true;
                 break;
                 default:
                     std::cout << "Invalid choice. Please try again." << std::endl;
